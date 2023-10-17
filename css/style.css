@@ -1,0 +1,46 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Product Sans';
+    src: local('Product Sans'), local('ProductSans-Regular'),
+        url('css/ProductSans-Regular.woff2') format('woff2'),
+        url('css/ProductSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Product Sans';
+    src: local('Product Sans Bold'), local('ProductSans-Bold'),
+        url('css/ProductSans-Bold.woff2') format('woff2'),
+        url('css/ProductSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+input[type=text] {
+    padding: 0.5em;
+    margin: 0.25em;
+    overflow: hidden;
+    border-radius: 0.5em;
+    border-width: 1px;
+    border-color: slategrey;
+    box-shadow: 0px 0em 0.5em lightslategray;
+}
+
+button {
+    background-color: aqua;
+    padding: 0.5em;
+    margin: 0.25em;
+    overflow: hidden;
+    border-radius: 0.5em;
+    border-width: 1px;
+    border-color: slategrey;
+    box-shadow: 0px 0em 0.5em lightslategray;
+}
