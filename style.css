@@ -24,31 +24,59 @@
     font-display: swap;
 }
 
-body{
+body {
     background-color: whitesmoke;
     font-family: 'Product Sans', Helvetica, sans-serif;
+}
+
+.basictext {
+    text-align:center;
+    color: grey;
 }
 
 input[type=text] {
     background-color: whitesmoke;
     font-family: 'Product Sans', Helvetica, sans-serif;
+    font-size: 1.25em;
     padding: 0.5em;
-    margin: 0.25em;
+    margin: 0.5em;
+    width: 20em;
     overflow: hidden;
-    border-radius: 0.5em;
-    border-width: 1px;
-    border-color: slategrey;
-    box-shadow: 0px 0em 0.5em lightslategray;
+    border-radius: 1em;
+    border-width: 0.2em;
+    border: whitesmoke;
+    border-style: solid;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 }
 
 button {
     font-family: 'Product Sans', Helvetica, sans-serif;
-    background-color: whitesmoke;
+    font-size: 1.25em;
+    color: whitesmoke;
+    background-color: #333333;
     padding: 0.5em;
-    margin: 0.25em;
+    margin: 0.5em;
     overflow: hidden;
-    border-radius: 0.5em;
-    border-width: 1px;
-    border-color: slategrey;
-    box-shadow: 0px 0em 0.5em lightslategray;
+    border-radius: 1em;
+    border-width: 0.2em;
+    border-color: #333333;
+    border-style: solid;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.flexboxcontainer {
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flexboxinstance {
+    width: auto;
 }
