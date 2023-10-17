@@ -24,7 +24,14 @@
     font-display: swap;
 }
 
+body{
+    background-color: whitesmoke;
+    font-family: 'Product Sans', Helvetica, sans-serif;
+}
+
 input[type=text] {
+    background-color: whitesmoke;
+    font-family: 'Product Sans', Helvetica, sans-serif;
     padding: 0.5em;
     margin: 0.25em;
     overflow: hidden;
@@ -35,7 +42,8 @@ input[type=text] {
 }
 
 button {
-    background-color: aqua;
+    font-family: 'Product Sans', Helvetica, sans-serif;
+    background-color: whitesmoke;
     padding: 0.5em;
     margin: 0.25em;
     overflow: hidden;
