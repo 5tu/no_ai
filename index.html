@@ -11,12 +11,26 @@
 
 <body>
     <div class="flexboxcontainer">
-    <div class="flexboxinstance">
-        <input type="text" id="searchTerm" placeholder="Google Images">
-        <button id="sb" onclick="searchGoogleImages()">Search</button>
-<br><div class="basictext">Search Google Images without returning AI generated results.</div><br>
-    <br>
-    </div>
+        <div class="flexboxinstance">
+            <input type="text" id="searchTerm" placeholder="Google Images">
+            <button id="sb" onclick="searchGoogleImages()">Search</button>
+            <div class="basictext">Search Google Images without returning AI/ML generated results.</div><br>
+            <select name="imageSize" id="imageSize">
+                <option value="&tbs=isz:m">Medium</option>
+                <option value="&tbs=isz:l" selected="selected">Large</option>
+                <option value="&tbs=isz:lt,islt:2mp">2mp</option>
+                <option value="&tbs=isz:lt,islt:4mp">4mp</option>
+                <option value="&tbs=isz:lt,islt:8mp">8mp</option>
+                <option value="&tbs=isz:lt,islt:12mp">12mp</option>
+                <option value="&tbs=isz:lt,islt:20mp">20mp</option>
+                <option value="&tbs=isz:lt,islt:40mp">40mp</option>
+            </select>
+            <select name="safeSearch" id="safeSearch">
+                <option value="&safe=off" selected="selected">SafeSearch Off</option>
+                <option value="$safe=on">SafeSearch On</option>
+            </select>
+            <br>
+        </div>
     </div>
 </body>
 
