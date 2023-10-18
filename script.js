@@ -1,7 +1,7 @@
 
 function searchGoogleImages() {
   const searchTerm = document.getElementById('searchTerm').value;
-  const query = searchTerm + '  -"ai" -"stable diffusion" -"midjourney" -"open art" -"prompt hunt" -"realistic vision" -site:impossibleimages.ai -site:impossibleimages.ai -site:freewayml.com -site:runwayml.com -site:lexica.art -site:tensor.art -site:civitai.com -site:opensea.io -site:krea.ai';
+  const query = searchTerm + '  -"ai" -"stable diffusion" -"midjourney" -"open art" -"prompt hunt" -"realistic vision" -site:impossibleimages.ai -site:playgroundai.com -site:freewayml.com -site:runwayml.com -site:lexica.art -site:tensor.art -site:civitai.com -site:opensea.io -site:krea.ai';
   const googleImagesSearchURL = generateGoogleImagesSearchURL(query);
   console.log(googleImagesSearchURL, '_blank');
   window.open(googleImagesSearchURL, '_blank');
