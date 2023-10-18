@@ -37,7 +37,7 @@ body {
         text-align: center;
         color: grey;
     }
-    
+
     input[type=text] {
         background-color: whitesmoke;
         font-family: 'Product Sans', Helvetica, sans-serif;
@@ -53,14 +53,14 @@ body {
         border-style: solid;
         box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
     }
-    
+
     input:focus,
     textarea:focus,
     select:focus {
         outline-offset: 0px !important;
         outline: none !important;
     }
-    
+
     button {
         font-family: 'Product Sans', Helvetica, sans-serif;
         font-size: 1.25em;
@@ -79,7 +79,7 @@ body {
         border-style: solid;
         box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
     }
-    
+
     select {
         background-color: whitesmoke;
         font-family: 'Product Sans', Helvetica, sans-serif;
@@ -94,13 +94,13 @@ body {
         border-style: solid;
         box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
     }
-    
+
     button:hover {
         background-color: #606060;
         border-color: #606060;
         border-style: solid;
     }
-    
+
     .flexboxcontainer {
         height: 100vh;
         padding: 0;
@@ -113,19 +113,19 @@ body {
         align-items: center;
         justify-content: center;
     }
-    
+
     .flexboxinstance {
         width: 40em;
         min-width: 40em;
     }
- }
+}
 
- @media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .basictext {
         text-align: center;
         color: grey;
     }
-    
+
     input[type=text] {
         background-color: whitesmoke;
         font-family: 'Product Sans', Helvetica, sans-serif;
@@ -141,14 +141,14 @@ body {
         border-style: solid;
         box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
     }
-    
+
     input:focus,
     textarea:focus,
     select:focus {
         outline-offset: 0px !important;
         outline: none !important;
     }
-    
+
     button {
         font-family: 'Product Sans', Helvetica, sans-serif;
         font-size: 1.25em;
@@ -167,7 +167,7 @@ body {
         border-style: solid;
         box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
     }
-    
+
     select {
         background-color: whitesmoke;
         font-family: 'Product Sans', Helvetica, sans-serif;
@@ -182,13 +182,13 @@ body {
         border-style: solid;
         box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
     }
-    
+
     button:hover {
         background-color: #606060;
         border-color: #606060;
         border-style: solid;
     }
-    
+
     .flexboxcontainer {
         height: 100vh;
         padding: 0;
@@ -201,9 +201,9 @@ body {
         align-items: center;
         justify-content: center;
     }
-    
+
     .flexboxinstance {
         width: 25em;
         min-width: 25em;
     }
- }
+}
