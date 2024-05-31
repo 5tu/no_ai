@@ -9,7 +9,7 @@ function loadExclusionTerms() {
 }
 
 async function searchGoogleImages(event) {
-  // event.preventDefault();  // Prevent form submission and page reload
+  event.preventDefault();  // Prevent form submission and page reload
   const searchTerm = document.getElementById('searchTerm').value;
   const exclusionTerms = await loadExclusionTerms();
   const exclusionQuery = exclusionTerms.map(term => `-"${term}"`).join(' ');
