@@ -9,7 +9,7 @@ function loadExclusionTerms() {
 }
 
 async function searchGoogleImages(event) {
-  event.preventDefault();  // Prevent form submission and page reload
+  // event.preventDefault();  // Prevent form submission and page reload
   const searchTerm = document.getElementById('searchTerm').value;
   const exclusionTerms = await loadExclusionTerms();
   const exclusionQuery = exclusionTerms.map(term => `-"${term}"`).join(' ');
@@ -27,6 +27,3 @@ function generateGoogleImagesSearchURL(query) {
   const selectedSafeSearchValue = dropdownSafeSearch.value;
   return `${baseGoogleImagesURL}${encodedQuery}${selectedImageSizeValue}${selectedSafeSearchValue}`;
 }
-
-// Attach the searchGoogleImages function to the button click event
-document.getElementById('sb').addEventListener('click', searchGoogleImages);
