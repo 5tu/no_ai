@@ -1,7 +1,18 @@
+// Load the exclusion terms from a CSV file
+function loadExclusionTerms() {
+  return fetch('exclusion_terms.csv')
+    .then(response => response.text())
+    .then(csvText => {
+      const parsedData = Papa.parse(csvText, { header: false });
+      return parsedData.data.flat();
+    });
+}
 
-function searchGoogleImages() {
+async function searchGoogleImages() {
   const searchTerm = document.getElementById('searchTerm').value;
-  const query = searchTerm + '  -"ai" -"stable diffusion" -"midjourney" -"open art" -"prompt hunt" -"realistic vision" -site:impossibleimages.ai -site:playgroundai.com -site:freewayml.com -site:runwayml.com -site:lexica.art -site:tensor.art -site:civitai.com -site:opensea.io -site:krea.ai -site:craiyon.com -site:ebay.com';
+  const exclusionTerms = await loadExclusionTerms();
+  const exclusionQuery = exclusionTerms.map(term => `-"${term}"`).join(' ');
+  const query = `${searchTerm} ${exclusionQuery}`;
   const googleImagesSearchURL = generateGoogleImagesSearchURL(query);
   console.log(googleImagesSearchURL, '_blank');
   window.open(googleImagesSearchURL, '_blank');
