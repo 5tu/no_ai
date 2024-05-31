@@ -8,13 +8,13 @@ function loadExclusionTerms() {
     });
 }
 
-async function searchGoogleImages() {
+async function searchGoogleImages(event) {
+  event.preventDefault();  // Prevent form submission and page reload
   const searchTerm = document.getElementById('searchTerm').value;
   const exclusionTerms = await loadExclusionTerms();
   const exclusionQuery = exclusionTerms.map(term => `-"${term}"`).join(' ');
   const query = `${searchTerm} ${exclusionQuery}`;
   const googleImagesSearchURL = generateGoogleImagesSearchURL(query);
-  console.log(googleImagesSearchURL, '_blank');
   window.open(googleImagesSearchURL, '_blank');
 }
 
@@ -27,3 +27,6 @@ function generateGoogleImagesSearchURL(query) {
   const selectedSafeSearchValue = dropdownSafeSearch.value;
   return `${baseGoogleImagesURL}${encodedQuery}${selectedImageSizeValue}${selectedSafeSearchValue}`;
 }
+
+// Attach the searchGoogleImages function to the button click event
+document.getElementById('sb').addEventListener('click', searchGoogleImages);
